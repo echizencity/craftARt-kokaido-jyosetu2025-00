@@ -1,3 +1,22 @@
+<!-- 
+# 表示タイトル by craftARt
+
+- [表示タイトル](https://username.github.io/reponame)  
+
+## craftARt とは？
+
+“craftARt” は、
+
+- **craft**（手仕事・手作り）
+- **AR**（拡張現実）
+- **art**（芸術・美術）
+
+の3つを組み合わせた造語です。  
+地域の文化財やものづくりを、AR技術で新しい形に再発信することを目指すWebアプリです。  
+
+本アプリは[craftARt-kit](https://github.com/echizencity/craftARt-kit)を使って作成しました。
+-->
+
 # craftARt 越前
 
 - [craftARt-kit](https://echizencity.github.io/craftARt-kit/)
@@ -12,7 +31,8 @@
 
 の3つを組み合わせた造語です。  
 地域の文化財やものづくりを、AR技術で新しい形に再発信することを目指すWebアプリです。  
-このアプリは[Code for Fukui](https://code4fukui.github.io)の協力で作成しました。
+
+本アプリは[Code for Fukui](https://code4fukui.github.io)の協力で作成しました。
 
 ## craftARt 越前 とは？
 
@@ -92,9 +112,24 @@
 - 「Repository name」を変更: `craftARt-kit` → `reponame`
 - [Create fork]で自分のアカウント下に作業用リポジトリを作成
 
-### 1-4. GitHub Pages を有効化
+### 1-4. README.md を修正
 
-- [Settings] → [Pages] → 「Branch」の“None”を“main”にして [Save]
+Forkしたリポジトリの `README.md` を開き、[…] → [Edit in place]  
+次の3点を修正する
+
+- **コメントアウトを解除:**  
+  1行目の `<!--` と、18行目の `-->` を削除する  
+  また、20行目以降の不要な説明文も削除する
+- **表示タイトルを変更:**  
+  2行目と4行目の `表示タイトル` を、**自分の展示タイトル**に変更する
+- **公開URLのパスを修正:**  
+  4行目にあるURL内の `username` と `reponame` を、それぞれ**GitHubアカウント名と、作成したリポジトリ名**に書き換える
+
+編集後、[Commit changes] → [Commit changes]で保存
+
+### 1-5. GitHub Pages を有効化
+
+- […] → [Settings] → [Pages] → 「Branch」の“None”を“main”にして [Save]
 - 約1分後に公開URLが発行される  
   `https://username.github.io/reponame`
 
@@ -153,8 +188,7 @@
 ### 4-3. models.csv を編集
 
 - 「models」フォルダから上の階層「reponame」フォルダに移動
-- CSVファイル（models.csv）を開き、[…] → [Edit in place]
-
+- CSVファイル（models.csv）を開き、[…] → [Edit in place]  
 以下のように入力する：
 
 |path|name|description|url|
