@@ -197,8 +197,12 @@ Forkしたリポジトリの `README.md` を開き、[…] → [Edit in place]
 |`./models/sueki03.glb`|須恵器|（任意）|（任意）|
 
 - 半角カンマ区切り
-- 1行目は `path,name` のままでOK
-- 2行目以降の `description,url` を入力しない場合も、名称の後ろの“,,”は消さない
+- 1行目は項目名:  
+  `path` , `name` , `description` , `url` のままで変更しない
+- 2行目以降がデータ内容:  
+  `path` は3Dモデルの置いてある場所（必須）  
+  `name` は3Dモデルの名称（必須）  
+  `description` , `url` は備考とリンク先（任意）。入力しない場合も、`name` の後ろの `“,,”` は消さない
 - 編集後、[Commit changes] → [Commit changes]で保存
 
 ---
