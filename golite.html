@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -215,10 +214,9 @@
       });
 
       async function loadModel(path, name, description, url) {
-        const golitePath = path.startsWith("models/")
-          ? path.replace(/^models\//, "models/golite/")
-          : path;
-        viewer.src = golitePath;
+        path = path.replace(/^\.\/?models\//, "./models/golite/");
+        
+        viewer.src = path;
         viewer.alt = name;
 
         if (hasDescription && description && description.trim() !== "") {
